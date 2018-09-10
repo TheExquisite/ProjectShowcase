@@ -1,0 +1,1 @@
+This is a webpage I built for Impact Dynamics Global as their main landing site. A fairly plain design was requested by the client, so I added a number of transition animations to add some life to the site.

@@ -16,6 +16,7 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Spacer from "./components/spacer"
 import PageNotFound from "./components/pageNotFound";
+import ImageDisplay from './components/ImageDisplay';
 
 export default class App extends React.Component<{}, { html: String|undefined }> {
 
@@ -30,16 +31,16 @@ export default class App extends React.Component<{}, { html: String|undefined }>
                 render() {
                     return (
                         configComps.map(element => {
-                            //When creating a new page component, and an if statement checking for the component's type here.
-                            if (element.type == "markdownDoc"){
-                                console.log(element.config);
-                                return<Content path={element.config}/>
-                            }
-                            else if (element.type == "jumbo"){
-                                return<Jumbo/>
-                            }
-                            else if (element.type == "spacer"){
-                                return<Spacer height={element.config}/>
+                            //When adding a new component, add a new switch case
+                            switch(element.type) {
+                                case "markdownDoc":
+                                    return<Content path={element.config}/> 
+                                case "jumbo":
+                                    return <Jumbo/>
+                                case "spacer":
+                                    return <Spacer height={element.config}/>
+                                case "images":
+                                    return <ImageDisplay images={element.config}/>
                             }
                         })
                     )

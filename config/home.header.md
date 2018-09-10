@@ -19,5 +19,6 @@ I aim to continue developing software, while looking to furthering my knowledge 
 * Webpack
 * Babel
 * Express
+* WebSockets
 * npm
 * VS Code

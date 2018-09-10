@@ -15,7 +15,7 @@ export default class        Navbar extends React.Component {
             <div className="nav">
                 <div className="container">
                     <div className="left">
-                        <span className="navTitle">James Clare - Projects</span>
+                        <span className="navTitle">My Projects</span>
                     </div>
                     <div className="right">
                         <ul>

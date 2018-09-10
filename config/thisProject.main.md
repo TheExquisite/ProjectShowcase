@@ -1,0 +1,1 @@
+This website itself is a React app! It's rendering all the pages from a dynamic templating engine I have written. Each page's written content is parsed from a markdown file into HTML, which makes updating page content really fast. 
